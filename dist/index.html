@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BLE data to google firebase</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://www.hibouair.com/images/logo.png"
+        alt="hibouair logo"
+        height="60"
+      />
+      <h2>Send Sensor data to cloud</h2>
+      <p>Fill out firebase API informations</p>
+      <br />
+      <!-- To get Ble data from HibouAir (Peripheral device), BleuIO has to be on central mode -->
+
+      <form action="send.html" class="w-50" id="forminput">
+        <div class="mb-3">
+          <label for="apiKey" class="form-label">apiKey</label>
+          <input
+            type="text"
+            class="form-control"
+            id="apiKey"
+            placeholder="apiKey"
+            name="apiKey"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="authDomain" class="form-label">authDomain</label>
+          <input
+            type="text"
+            class="form-control"
+            id="authDomain"
+            placeholder="authDomain"
+            name="authDomain"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="projectId" class="form-label">projectId</label>
+          <input
+            type="text"
+            class="form-control"
+            id="projectId"
+            placeholder="projectId"
+            name="projectId"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="storageBucket" class="form-label">storageBucket</label>
+          <input
+            type="text"
+            class="form-control"
+            id="storageBucket"
+            placeholder="storageBucket"
+            name="storageBucket"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="messagingSenderId" class="form-label"
+            >messagingSenderId</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="messagingSenderId"
+            placeholder="messagingSenderId"
+            required
+            name="messagingSenderId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="appId" class="form-label">appId</label>
+          <input
+            type="text"
+            class="form-control"
+            id="appId"
+            placeholder="appId"
+            name="appId"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="ref" class="form-label">Database URL</label>
+          <input
+            type="text"
+            class="form-control"
+            id="databaseurl"
+            placeholder="Database URL"
+            name="databaseurl"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="ref" class="form-label">ref</label>
+          <input
+            type="text"
+            class="form-control"
+            id="ref"
+            placeholder="ref"
+            name="ref"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="authDomain" class="form-label"></label>
+          <button type="submit" class="btn btn-success w-100">Submit</button>
+          <br /><br />
+        </div>
+      </form>
+
+      <br /><br />
+    </div>
+  </body>
+</html>

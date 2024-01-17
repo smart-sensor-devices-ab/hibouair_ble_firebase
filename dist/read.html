@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin
+    />
+    <title>Read</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <img
+        src="https://www.hibouair.com/images/logo.png"
+        alt="hibouair logo"
+        height="60"
+      />
+      <h2>Read Sensor data from cloud</h2>
+      <p>Fill out firebase Database informations</p>
+      <h5><div id="log"></div></h5>
+      <form action="#" id="formSubmit">
+        <div class="g-3 row">
+          <div class="col-md-5">
+            <input
+              type="text"
+              name="database"
+              id="database"
+              class="form-control"
+              placeholder="Database URL"
+              required
+            />
+          </div>
+          <div class="col-md-2">
+            <input
+              type="text"
+              name="ref"
+              id="ref"
+              class="form-control"
+              placeholder="Ref"
+              required
+            />
+          </div>
+          <div class="col-md-2">
+            <select
+              id="date-choose"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option value="1">Today</option>
+              <option value="2">Yesterday</option>
+              <option value="3">3 days ago</option>
+              <option value="4">4 days ago</option>
+              <option value="5">5 days ago</option>
+              <option value="0">all</option>
+            </select>
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-success" id="getData">Get Data</button>
+          </div>
+          <div class="col-auto">
+            <a class="btn btn-warning" id="exportData">Export</a>
+          </div>
+        </div>
+      </form>
+      <br />
+      <canvas id="myChart" style="width: 100%"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script type="module" src="./read.94018971.js"></script>
+  </body>
+</html>

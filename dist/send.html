@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <title>BLE data to google firebase</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://www.hibouair.com/images/logo.png"
+        alt="hibouair logo"
+        height="60"
+      />
+      <h2>HibouAir Sensor data send to cloud</h2>
+      <br />
+      <button class="btn btn-success" id="connect">Connect</button>
+      <button
+        type="submit"
+        class="btn btn-success"
+        id="sendDataTCloudBtn"
+        style="display: none"
+      >
+        Send data to cloud Data
+      </button>
+      <button
+        class="btn btn-warning"
+        id="stopSendingData"
+        style="display: none"
+      >
+        Stop Sending Data
+      </button>
+      <a href="./read.html" target="_blank" class="btn btn-primary">
+        Read data
+      </a>
+      <br /><br />
+      <h5><div id="log"></div></h5>
+    </div>
+    <script src="./send.45f0d237.js" type="module"></script>
+  </body>
+</html>
