@@ -201,7 +201,7 @@ document
     if (intervalId) {
       clearInterval(intervalId);
     }
-    intervalId = setInterval(sendDataToCloud, 15000);
+    intervalId = setInterval(sendDataToCloud, 60000);
     document.getElementById('log').innerHTML =
       'Sending data to cloud. Click stop sending data to stop the process.';
   });
